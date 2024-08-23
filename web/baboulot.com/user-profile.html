@@ -92,43 +92,142 @@
 
 
 	
-
-<<section>
-	<div class="container" >
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card mt-5" >
-                    <div class="card-header text-center" style="background-color: #216CFB;">
-                        <h3 style="color:#ffffff;">Votre Compte Baboulot.com</h3>
-                    </div>
-                    <div class="card-body">
-                        <form action="user-profile.html" method="get">
-                            <div class="mb-3">
-                                <label for="email" class="form-label" style="color:#216CFB">Addresse Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Entre votre addresse email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label" style="color:#216CFB">Mot de Passe</label>
-                                <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button type="submit" class="btn btn-primary">Se Connecter</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card-footer text-center" >
-                        <a href="#">Mot de passe oublié?</a>
-                        <p class="mt-2">Vous n'avez pas de compte? <a href="#">Créer un compte</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
->
-
+<section>
+	<div class="container mt-5">
+		<!-- Master Card -->
+		<div class="card border-primary mb-3">
+			<div class="card-header bg-primary text-white text-center">
+				<h3 style="color:white;">Profile de Dr Yves Matanga</h3>
+			</div>
+			<div class="card-body text-center">
+				<!-- Profile Picture Section -->
+				<div class="mb-4">
+					<img src="images/sindika.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mb-3" id="profilePicture" style="width: 150px; height: 150px;">
+					<form>
+						<div class="form-group">
+							<label for="profilePictureUpload" class="btn btn-outline-primary btn-sm">Change Profile Picture</label>
+							<input type="file" class="form-control-file" id="profilePictureUpload" accept="image/*" style="display:none;">
+						</div>
+					</form>
+				</div>
 	
-
+				<!-- Common Details Card -->
+				<div class="card mb-4">
+					<div class="card-header bg-light">
+						<h5>Common Details</h5>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputName">Name</label>
+									<input type="text" class="form-control" id="inputName" value="Dr Yves Matanga">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputID">ID Number</label>
+									<input type="text" class="form-control" id="inputID" value="9105106430182">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputGender">Gender</label>
+									<select id="inputGender" class="form-control">
+										<option selected>Male</option>
+										<option>Female</option>
+										<option>Other</option>
+									</select>
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputDob">Date of Birth</label>
+									<input type="date" class="form-control" id="inputDob" value="1991-05-10">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputHeadline">Summary Headline</label>
+								<input type="text" class="form-control" id="inputHeadline" value="Technical Programmer, Data and Research Scientist">
+							</div>
+						</form>
+					</div>
+				</div>
+	
+				<!-- Education Card -->
+				<div class="card mb-4">
+					<div class="card-header bg-light">
+						<h5>Education</h5>
+					</div>
+					<div class="card-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<h6>University of Johannesburg</h6>
+								<p>PhD in Electrical Engineering | 2022</p>
+							</li>
+							<!-- Add more education items as needed -->
+						</ul>
+						<button class="btn btn-outline-primary mt-3">Add Education</button>
+					</div>
+				</div>
+	
+				<!-- Work Experience Card -->
+				<div class="card mb-4">
+					<div class="card-header bg-light">
+						<h5>Work Experience</h5>
+					</div>
+					<div class="card-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+								<h6>Data Science Facilitator</h6>
+								<p>ExploreAI | 04/2023 - Current (1 year 5 months)</p>
+							</li>
+							<li class="list-group-item">
+								<h6>Content Developer</h6>
+								<p>Eduvos | 07/2022 - 04/2023 (10 months)</p>
+							</li>
+							<!-- Add more work experience items as needed -->
+						</ul>
+						<button class="btn btn-outline-primary mt-3">Add Work Experience</button>
+					</div>
+				</div>
+	
+				<!-- Skills Card -->
+				<div class="card mb-4">
+					<div class="card-header bg-light">
+						<h5>Skills</h5>
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+							<input type="text" class="form-control" id="inputSkills" placeholder="Add a skill">
+						</div>
+						<div>
+							<span class="badge badge-primary">Python</span>
+							<span class="badge badge-primary">Data Science</span>
+							<span class="badge badge-primary">Machine Learning</span>
+							<!-- Add more skill badges as needed -->
+						</div>
+						<button class="btn btn-outline-primary mt-3">Add Skill</button>
+					</div>
+				</div>
+	
+				<!-- CV Upload/Download Card -->
+				<div class="card mb-4">
+					<div class="card-header bg-light">
+						<h5>CV Upload/Download</h5>
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="cvUpload">Upload CV (PDF)</label>
+								<input type="file" class="form-control-file" id="cvUpload" accept=".pdf">
+							</div>
+							<a href="Yves-Matanga-Official-CV.pdf" class="btn btn-primary mt-3" download>Download Current CV</a>
+						</form>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+	
+</section>
 	
 
 	<footer class="ftco-footer ftco-bg-dark ftco-section">

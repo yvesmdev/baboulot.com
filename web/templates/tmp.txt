@@ -1,0 +1,80 @@
+	
+<section>
+	<div class="container mt-5">
+		<!-- Profile Header -->
+		<div class="row mb-4">
+			<div class="col-md-3">
+				<img src="path_to_profile_image.jpg" alt="Profile Picture" class="img-fluid rounded-circle border border-primary">
+			</div>
+			<div class="col-md-9">
+				<h2 class="text-primary">Dr. Yves Matanga</h2>
+				<p>Male - African - South African Citizen</p>
+				<p>Pretoria | <a href="mailto:yves.matanga@gmail.com" class="text-primary">yves.matanga@gmail.com</a> | 072 2264 804</p>
+				<p><strong>Willing to relocate: Within SA</strong></p>
+				<p>Date of Birth: 10/05/1991</p>
+				<p>Technical Programmer, Data and Research Scientist</p>
+				<a href="Yves-Matanga-Official-CV.pdf" class="btn btn-primary mt-3" target="_blank">Download CV</a>
+			</div>
+		</div>
+	
+		<!-- Profile Completeness -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<div class="progress" style="height: 20px;">
+					<div class="progress-bar bg-primary" role="progressbar" style="width: 100%;">100% Profile Complete</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Work Experience Section -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<h4 class="text-primary">Work Experience</h4>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<strong>Data Science Facilitator</strong> <br>
+						ExploreAI | 04/2023 - Current (1 year 5 months) <br>
+						IT & Internet - Education & Training - Training
+					</li>
+					<li class="list-group-item">
+						<strong>Content Developer</strong> <br>
+						Eduvos | 07/2022 - 04/2023 (10 months) <br>
+						Education & Training - University & Academy
+					</li>
+				</ul>
+				<button class="btn btn-outline-primary mt-3">Add Work Experience</button>
+			</div>
+		</div>
+	
+		<!-- Education Section -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<h4 class="text-primary">Education</h4>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<strong>University of Johannesburg</strong> <br>
+						2022
+					</li>
+				</ul>
+				<button class="btn btn-outline-primary mt-3">Add Education</button>
+			</div>
+		</div>
+	
+		<!-- Blocked Companies Section -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<h4 class="text-primary">Blocked Companies</h4>
+				<button class="btn btn-outline-primary">Add Blocked Companies</button>
+			</div>
+		</div>
+	
+		<!-- Contact Requests Section -->
+		<div class="row mb-4">
+			<div class="col-md-12">
+				<h4 class="text-primary">Contact Requests</h4>
+				<button class="btn btn-outline-primary">See Requests</button>
+			</div>
+		</div>
+	</div>
+	
+</section>
